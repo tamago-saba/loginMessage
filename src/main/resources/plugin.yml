@@ -1,0 +1,6 @@
+name: LoginMessage
+version: '${project.version}'
+main: com.github.tsuoihito.loginmessage.LoginMessage
+api-version: 1.19
+authors: [ tsuoihito ]
+description: A login message plugin for Minecraft
