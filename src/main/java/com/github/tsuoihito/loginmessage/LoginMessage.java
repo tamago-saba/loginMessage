@@ -1,5 +1,6 @@
 package com.github.tsuoihito.loginmessage;
 
+import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -23,6 +24,6 @@ public final class LoginMessage extends JavaPlugin implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL)
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage(message);
+        event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 }
